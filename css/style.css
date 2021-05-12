@@ -159,7 +159,7 @@ body{
     color: var(--main-text-color); 
 } 
 
-.list-item .contacts:hover,s
+.list-item .contacts:hover,
 .list-item .contacts:focus{ 
     color: var(--accent-text-color); 
 }
@@ -228,16 +228,17 @@ body{
 
 .features-flex{
     display: flex;
-    margin-bottom: 47px;
+    
 }
 
 .features-list{
-
     display: flex;
+    
 
 }
 
 .feutures-item:nth-child(-n + 3){
+    
     margin-left: 0;
     margin-right: 30px;
 }
