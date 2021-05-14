@@ -16,6 +16,7 @@
     --background-color-card:#EEEEEE;
     --card-set-gap: 30px;
 }
+
 h1,
 h2,
 h3,
@@ -36,7 +37,9 @@ a{
 
 }
 img{
-    display: block;
+     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 body{
@@ -93,7 +96,6 @@ body{
     
     margin-left: auto;
     margin-right: auto;
-    /* outline: 2px solid #474141; */
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -169,7 +171,6 @@ body{
 }
 
 .list-item:first-child{
-    /* margin-left: 331px; */
     margin-right: 50px;
 }
 
@@ -254,7 +255,7 @@ body{
 
 .section-features{
     margin-top: 0;
-    margin-bottom: 94px;
+    padding-bottom: 47px;
     color:var(--title-black-color);
     font-size: 36px;
     line-height: 1.16;
@@ -288,7 +289,8 @@ body{
 
 .section-work{
     margin-top: 0;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
+    padding-top: 47px;
 }
 
 .work-item:nth-child(-n + 2){
@@ -361,11 +363,7 @@ body{
     text-align: center;
 }
 
-.command-list-item .img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
+
 .command-list .text{
     margin-top: 0;
     margin-bottom: 30px;
@@ -475,24 +473,22 @@ body{
     flex-basis: calc((100% - 90px) / 3);
     margin-right: -30px;
     margin-top: -30px;
-   
-   
 }
+
 .portfolio-list-item{
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
 }
 
-
 .portfolio-card-border{
+
     border-bottom: 1px solid var(--background-color-card);
     border-right: 1px solid var(--background-color-card);
     border-left: 1px solid var(--background-color-card);
     box-sizing: border-box;
     padding-top: 20px;
     padding-bottom: 20px;
-   
 }
 
 .portfolio-list .portfolio-title{
@@ -505,11 +501,11 @@ body{
 }
 
 .portfolio-list .text{
+    
     color: var(--main-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-
 }
 
                     /*====== END SECTION PORTFOLIO ======*/
