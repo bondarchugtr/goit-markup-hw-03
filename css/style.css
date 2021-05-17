@@ -469,8 +469,7 @@ body{
 .portfolio-list{
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-wrap: wrap; 
     margin-right: -30px;
     margin-top: -30px;
 }
