@@ -72,9 +72,8 @@ body{
 .features-flex,
 .features-list,
 .work-list,
-.container-flex,
+.header-flex,
 .portfolio-list{
-
     display: flex;
 }
                     /* ====== END COMBINED ALL SECTION======*/
@@ -82,50 +81,36 @@ body{
                     /*======PAGE HEADER======*/
 
 .page-header{
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    
-    width: 1630px;
-    padding-left: 15px;
-    padding-right: 15px;
     border-bottom: 1px solid var(--color-header-bottom);
 }    
 
-.container{
-    
+.container{  
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-
 }
-
 
 .site-nav{
     display: flex;
-    width: 294px;
-    left: 453px;
-    top: 32px;
 }
 
 .site-list{
     display: flex;
     margin-left: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
     width: 294px;
     left: 453px;
     top: 32px;
 } 
-.nav-list-item:nth-child(2){
+.nav-list-item{
     margin-right: 50px;
-    margin-left: 50px;
+}
+.nav-list-item:last-child{
+    margin-right: 0;
 }
 
 .logo{
-
     display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -136,21 +121,21 @@ body{
 }
 
     .weblogo{
-   
     color: var(--logo-blue-color);
     font-size: 26px;
     line-height: 1.19;
 }
 
-
 .nav-list-item .link,
 .list-item .contacts{
-    
+    display: flex;
     color: var(--title-black-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .nav-list-item .link:hover,
@@ -166,18 +151,18 @@ body{
 .site-list-contacts{
     display: flex;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;   
+    
 }
-
-.list-item:first-child{
-    margin-right: 50px;
-}
-
 .list-item .contacts{ 
-   
     color: var(--main-text-color); 
 } 
+.site-list-contacts .list-item{
+margin-right: 50px;
+}
+
+.list-item:last-child{
+    margin-right: 0;
+}
 
 .list-item .contacts:hover,
 .list-item .contacts:focus{ 
@@ -191,8 +176,8 @@ body{
 
 .hero{
     
-    margin-top: 0;
-    margin-bottom: 94px;
+   padding-top: 200px;
+   padding-bottom: 200px;
     background-color: var(--banner-color-background);
     text-align: center;
 }
@@ -200,7 +185,6 @@ body{
 .hero-title{
     margin-top: 0;
     margin-bottom: 30px;
-    padding-top: 200px;
     
     color: var(--primary-white-color);
     font-weight: 700;
@@ -221,7 +205,6 @@ body{
     border-radius: 4px;
     border:  var(--accent-text-color);
     min-width: 200px;
-    margin-bottom: 200px;
     background: var(--accent-text-color);
     box-shadow: var(--color-box-shadow);
     color: var(--primary-white-color);
@@ -246,20 +229,17 @@ body{
                  /*====== SECTION-FEATURES ======*/
 
 
-
-
 .feutures-item:nth-child(-n + 3){
     margin-left: 0;
     margin-right: var(--card-set-gap);
 }
 
 .section-features{
-    margin-top: 0;
-    padding-bottom: 47px;
+    padding-top: 94px;
+    padding-bottom: 94px;
     color:var(--title-black-color);
     font-size: 36px;
     line-height: 1.16;
-    
 }
 
 .features-list .title{
@@ -272,15 +252,17 @@ body{
     text-transform: uppercase;   
 }
 
-
 .features-list .text{ 
-    margin-top: 0;
-    margin-bottom: 0;
     color: var(--main-text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
+.feutures-item{
+    width: 270px;
+    height: 100px;
+}
+
                     /*====== END SECTION-FEATURES ======*/
 
 
@@ -288,9 +270,7 @@ body{
 
 
 .section-work{
-    margin-top: 0;
-    padding-bottom: 94px;
-    padding-top: 47px;
+    padding-bottom: 94px; 
 }
 
 .work-item:nth-child(-n + 2){
@@ -309,6 +289,10 @@ body{
     line-height: 1.16;
     text-align: center;
 }
+.work-item{
+    width: 370px;
+    height: 295px;
+}
 
 
                     /*====== END SECTION-WORK ======*/
@@ -317,8 +301,8 @@ body{
                     /*====== SECTION-COMMAND ======*/
 
 .section-command{
-    margin-top: 0;
-    margin-bottom:0;
+    display: flex;
+    padding-bottom: 94px;
     background-color: var(--background-command-color);
 }
 
@@ -329,13 +313,11 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     margin-bottom: 50px;
-    padding-top: 94px;
     color: var(--title-black-color);
 
 }
  .command-list{
     display: flex;
-    padding-bottom: 94px;
     margin-right: -30px;
     margin-top: -30px;
 
@@ -345,6 +327,8 @@ body{
     margin-right: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .item-card{
@@ -378,15 +362,17 @@ body{
                     /*====== FOOTER ======*/
 
 .footer{ 
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     background-color: var(--banner-color-background); 
+
 }
 
 .logo-footer{
     display: flex;
     margin-top: 0;
     margin-bottom: 20px;
-    padding-top: 60px;
     color: var(--primary-white-color);
     font-family: Raleway, sans-serif;
     font-size: 26px;
@@ -395,18 +381,16 @@ body{
 }
 
 .address-name, 
-.address-list .data{
+.address-list .address-list-item{
     display: flex;
-    margin-top: 0;
-    margin-bottom: 9px;
     color: var(--primary-white-color);
     line-height: 1.71;
     font-style: normal;    
+    margin-top: 0;
+    margin-bottom: 9px;
 }
 
-.address-list{
-    padding-bottom: 60px;
-}
+
 .address-list .data{ 
     color: var(--collor-rgb-footer); 
 }
@@ -424,8 +408,8 @@ body{
 
 
 .section-portfolio{
-       margin-top: 94px;
-       margin-bottom: 91px;
+       padding-top: 94px;
+       padding-bottom: 91px;
        
    }
 
@@ -486,8 +470,7 @@ body{
     border-right: 1px solid var(--background-color-card);
     border-left: 1px solid var(--background-color-card);
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
 }
 
 .portfolio-list .portfolio-title{
