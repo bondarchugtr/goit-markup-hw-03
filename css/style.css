@@ -185,7 +185,6 @@ margin-right: 50px;
 .hero-title{
     margin-top: 0;
     margin-bottom: 30px;
-    
     color: var(--primary-white-color);
     font-weight: 700;
     font-size: 44px;
@@ -243,7 +242,6 @@ margin-right: 50px;
 }
 
 .features-list .title{
-    margin-top: 0;
     margin-bottom: 10px;
     color: var(--title-black-color);
     font-weight: 700;
