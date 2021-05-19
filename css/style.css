@@ -338,7 +338,6 @@ margin-right: 50px;
     margin-top: 0;
     margin-bottom: 10px;  
     color: var(--logo-black-color);
-
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -348,7 +347,6 @@ margin-right: 50px;
 
 .command-list .text{
     margin-top: 0;
-    margin-bottom: 30px;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.18;
@@ -380,12 +378,15 @@ margin-right: 50px;
 
 .address-name, 
 .address-list .address-list-item{
-    display: flex;
+ 
     color: var(--primary-white-color);
     line-height: 1.71;
     font-style: normal;    
     margin-top: 0;
     margin-bottom: 9px;
+}
+.address-list-item:last-child{
+    margin-bottom: 0;
 }
 
 
